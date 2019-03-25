@@ -23,7 +23,7 @@ navigation:
 - text: Home
   url: /
 - text: About
-  url: myblog/about/
+  url: /about/
 - text: Style Guides
   url: /style-guide/
 - text: Archives
