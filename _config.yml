@@ -16,14 +16,14 @@ and complete randomness"
 baseurl: "/myblog"
 
 # The base hostname & protocol of your site for where absolute urls are needed
-url: "https://smiley-coyote.github.io/myblog"
+url: "https://smiley-coyote.github.io"
 
 # Site navigation - each item must have a title and a url.
 navigation:
 - text: Home
   url: /
 - text: About
-  url: /myblog/about/
+  url: /about/
 - text: Style Guides
   url: /style-guide/
 - text: Archives
