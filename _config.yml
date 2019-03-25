@@ -1,0 +1,64 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site title
+title: "Nicholas Alex"
+
+# A description of your site for social meta tag, search engines, and feed.xml
+description: "Welcome to my blog page where I will post articles about my projects, my experiences, 
+and complete randomness"
+
+# The subpath of your site, e.g. /blog, for generating urls
+baseurl: "/myblog"
+
+# The base hostname & protocol of your site for where absolute urls are needed
+url: "https://justgoodthemes.com"
+
+# Site navigation - each item must have a title and a url.
+navigation:
+- text: Home
+  url: /
+- text: About
+  url: /about/
+- text: Style Guides
+  url: /style-guide/
+- text: Archives
+  url: /tags/
+- text: Download
+  url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+
+# The shortname for your Disqus site to enable comments.
+disqus: justgoodthemes
+
+# Author information - author info at the bottom of the post
+author_name: "Nick"
+author_bio: "Nick is a web developer, bread maker, and a father of a pug."
+author_url:  "https://nicholasaalex.com"
+author_location: "Orlando, Florida"
+author_image: /assets/images/authorimage.jpg
+
+# Social links in the site footer
+twitter_username: "username"
+facebook_username: "username"
+github_username: "smiley-coyote"
+pinterest_username: "username"
+instagram_username: "smiley-coyote"
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: '/page:num/'
+plugins: [jekyll-paginate]
+
+# Permalinks
+permalink: /:title
+
+markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
