@@ -13,7 +13,7 @@ description: "Welcome to my blog page where I will post articles about my projec
 and complete randomness"
 
 # The subpath of your site, e.g. /blog, for generating urls
-baseurl: ""
+baseurl: "/myblog"
 
 # The base hostname & protocol of your site for where absolute urls are needed
 url: "https://smiley-coyote.github.io"
