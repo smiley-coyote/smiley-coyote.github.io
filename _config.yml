@@ -21,9 +21,9 @@ url: "https://smiley-coyote.github.io"
 # Site navigation - each item must have a title and a url.
 navigation:
 - text: Home
-  url: /
+  url: /myblog
 - text: About
-  url: /myblog/about/
+  url: /myblog/about
 - text: Style Guides
   url: /style-guide/
 - text: Archives
