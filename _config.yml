@@ -24,12 +24,8 @@ navigation:
   url: /myblog
 - text: About
   url: /myblog/about
-- text: Style Guides
-  url: /style-guide/
 - text: Archives
-  url: /tags/
-- text: Download
-  url: https://github.com/JustGoodThemes/Scriptor-Jekyll-Theme
+  url: /myblog/tags
 
 # The shortname for your Disqus site to enable comments.
 disqus: justgoodthemes
