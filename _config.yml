@@ -38,10 +38,9 @@ author_location: "Orlando, Florida"
 author_image: /myblog/assets/images/authorimage.png
 
 # Social links in the site footer
-twitter_username: "username"
-facebook_username: "username"
+codepen_username: "smiley-coyote"
 github_username: "smiley-coyote"
-pinterest_username: "username"
+linkedin_username: "nick-alex"
 instagram_username: "smiley-coyote"
 
 # http://jekyllrb.com/docs/pagination/
