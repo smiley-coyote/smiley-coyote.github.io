@@ -9,19 +9,19 @@
 title: "Nicholas Alex"
 
 # A description of your site for social meta tag, search engines, and feed.xml
-description: "Welcome to my blog page where I will post articles about my projects, my experiences, 
-and complete randomness"
+description: "Welcome to my blog page where I will post about my experiences in web development, life, 
+and all the choas inbetween"
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl: "/myblog"
 
 # The base hostname & protocol of your site for where absolute urls are needed
-url: "https://smiley-coyote.github.io/myblog"
+url: "https://smiley-coyote.github.io"
 
 # Site navigation - each item must have a title and a url.
 navigation:
 - text: Home
-  url: /myblog
+  url: /myblog/
 - text: About
   url: /myblog/about
 - text: Archives
@@ -35,7 +35,7 @@ author_name: "Nick"
 author_bio: "Nick is a web developer, bread maker, and a father of a pug."
 author_url:  "https://nicholasaalex.com"
 author_location: "Orlando, Florida"
-author_image: /assets/images/authorimage.jpg
+author_image: /myblog/assets/images/authorimage.png
 
 # Social links in the site footer
 twitter_username: "username"
