@@ -10,7 +10,7 @@ title: "Nicholas Alex"
 
 # A description of your site for social meta tag, search engines, and feed.xml
 description: "Welcome to my blog page where I will post about my experiences in web development, life, 
-and all the choas inbetween"
+and all the chaos inbetween"
 
 # The subpath of your site, e.g. /blog, for generating urls
 baseurl: "/myblog"
@@ -32,7 +32,7 @@ disqus: justgoodthemes
 
 # Author information - author info at the bottom of the post
 author_name: "Nick"
-author_bio: "Nick is a web developer, bread maker, and a father of a pug."
+author_bio: "Nick is a freelance web developer, bread maker, universe explorer, and a father of a pug."
 author_url:  "https://nicholasaalex.com"
 author_location: "Orlando, Florida"
 author_image: /myblog/assets/images/authorimage.png
