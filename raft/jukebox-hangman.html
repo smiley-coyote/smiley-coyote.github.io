@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">    
+    <title>The Early Adventures of JavaScript</title> 
+    <meta name="description" content="Welcome to my blog page where I will post about my experiences in web development, life, and all the chaos inbetween">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+    <link rel="canonical" href="http://localhost:4000/myblog/jukebox-hangman">
+
+    <link rel="alternate" type="application/rss+xml" title="Nicholas Alex Feed" href="http://localhost:4000/myblog/feed.xml">
+
+    <!-- Site Favicon -->
+    <link rel="shortcut icon" href="http://localhost:4000//myblog" type="image/png" />
+
+    <!-- Font Embed Code -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic%7CLato:400,400italic,700,700italic" />
+
+    <!-- CSS Styles -->
+    <link href="/myblog/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="page" class="site inner">
+    <header class="site-header">
+        <h1 class="site-title"><a class="logo-text" href="/myblog/">Nicholas Alex</a></h1>
+        <nav class="main-navigation">
+            <h2 class="screen-reader-text">Main navigation</h2>
+            <ul class="menu">
+                
+                
+                
+                <li class="menu-item ">
+                    <a class="" href="/myblog/">Home</a>
+                </li>
+                
+                
+                
+                <li class="menu-item ">
+                    <a class="" href="/myblog/about">About</a>
+                </li>
+                
+                
+                
+                <li class="menu-item ">
+                    <a class="" href="/myblog/tags">Archives</a>
+                </li>
+                
+            </ul><!-- .menu -->
+        </nav><!-- .site-navigation -->
+    </header>
+
+    
+
+    <main class="main-content">
+
+    <article class="post">
+
+        <header class="post-header">
+            <time class="post-date" datetime="2019-03-28">March 28, 2019</time>
+            
+            <h1 class="post-title">The Early Adventures of JavaScript</h1>
+            <div class="post-meta">
+                by <span class="post-author">Nick</span> <span class="post-tags">
+                posted in <a href="/myblog/tags/index.html#tech" title="Pages tagged tech"
+                    rel="tag">tech</a><a href="/myblog/tags/index.html#web+development" title="Pages tagged web development"
+                    rel="tag">web development</a><a href="/myblog/tags/index.html#experiences" title="Pages tagged experiences"
+                    rel="tag">experiences</a>
+                </span>
+                
+            </div><!-- .post-meta -->
+            <div class="post-thumbnail">
+                <figure class="kg-card kg-image-card kg-width-wide">
+                    <img src="/myblog/assets/images/posts/2019/jukebox.png" class="kg-image" alt="The Early Adventures of JavaScript">
+                </figure>
+            </div><!-- .post-thumbnail -->
+            
+        </header><!-- .entry-header -->
+        <div class="post-content">
+            <p>With no prior experience to programming whatsoever, learning JavaScript reminded me of a couple things. First, when I started learning about JavaScript variables, I thought about the variables in Algebra, in which we’d assign them values and plug them into equations. This made me to think about Algebra class in middle school, and then I thought about my mom.</p>
+
+<p>What about my mom?</p>
+
+<!--more-->
+
+<p><strong><em>~flashback time~</em></strong></p>
+
+<p>When I was in middle school, I had the opportunity to take a pre-Algebra honors class. Math was my only strength at the time since I struggled with reading and writing. My mom was the only Algebra teacher at my school, so I had no choice but to take her class. This had its advantages and disadvantages. One advantage was that I helped her grade my classmates’ papers, which meant I had access to the Teacher’s book that had all of the answers. A disadvantage was that one of her students from her remedial math class threatened to beat me up everyday in the hallway. He would grab my shirt and go right up to my face and say “You’re mom failed me, so I’m gonna beat you up.” Fortunately, the janitor at the school, who looked like he had just escaped from prison and had a constant “stab-y” look in his face, kept that bully away from me. As intimidating has the janitor appeared, he was actually a very sweet man who was friends with my mom and always had my back in school.</p>
+
+<p><strong><em>~end of flashback~</em></strong></p>
+
+<p>Anyway, my middle school experiences probably deserve their own blog post, but for now let me get back to JavaScript.</p>
+
+<p>In week three of my Web Development Bootcamp, I struggled understanding JavaScript because I didn’t know how to think like a computer. A computer thinks in a series of steps. As a whole, all of these steps seem very overwhelming and complicated, but when broken down, they are much more comprehensible. In order for me to solve a problem with code, I had to restructure the way I would usually come up with a solution by breaking everything down into a series of simple steps.</p>
+
+<p>When looking back at my first three JavaScript homework assignments, I can see now how apparent my progress was each week as I would be introduced to new concepts. My first assignment was to create a <a href="https://smiley-coyote.github.io/Word-Guess-Game/">hangman game</a> using the simplest understanding of JavaScript. We had enough creative freedom to make it anyway we’d like, so I decided to create a virtual jukebox player that would play a song after guessing its title.</p>
+
+<p>I put all of the song titles into an array that were assigned to a variable named “words”.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"MY GIRL"</span><span class="p">,</span> <span class="s2">"BACK IN BLACK"</span><span class="p">,</span> <span class="s2">"BEAT IT"</span><span class="p">,</span> <span class="s2">"BORN TO BE WILD"</span><span class="p">,</span> 
+<span class="s2">"I GOT YOU BABE"</span><span class="p">,</span> <span class="s2">"I WANNA HOLD YOUR HAND"</span><span class="p">,</span> <span class="s2">"LUCY IN THE SKY WITH DIAMONDS"</span><span class="p">,</span> <span class="s2">"ROADHOUSE BLUES"</span><span class="p">,</span> 
+<span class="s2">"SATISFACTION"</span><span class="p">,</span> <span class="s2">"WALKING ON SUNSHINE"</span><span class="p">,</span> <span class="s2">"BILLIE JEAN"</span><span class="p">,</span> <span class="s2">"HIT THE ROAD JACK"</span><span class="p">,</span> <span class="s2">"I GET AROUND"</span><span class="p">,</span> <span class="s2">"LIGHT MY FIRE"</span><span class="p">,</span> 
+<span class="s2">"SUNSHINE OF YOUR LOVE"</span><span class="p">,</span> <span class="s2">"ALL ALONG THE WATCHTOWER"</span><span class="p">,</span> <span class="s2">"HOUSE OF THE RISING SUN"</span><span class="p">,</span> <span class="s2">"ANOTHER ONE BITES THE DUST"</span><span class="p">,</span>
+<span class="s2">"SUMMER IN THE CITY"</span><span class="p">,</span> <span class="s2">"THE AGE OF AQUARIUS"</span><span class="p">,</span> <span class="s2">"GOD ONLY KNOWS"</span><span class="p">,</span> <span class="s2">"MRS. ROBINSON"</span><span class="p">,</span> <span class="s2">"MR. TAMBOURINE MAN"</span><span class="p">,</span> <span class="s2">"SMELLS LIKE TEEN SPIRIT"</span><span class="p">,</span> 
+<span class="s2">"TIME OF THE SEASON"</span><span class="p">,</span> <span class="s2">"FOR WHAT IT</span><span class="err">\</span><span class="s2">'S WORTH”];</span></code></pre></figure>
+
+<p>Next, after the user clicked the insert coin button, a function was called that randomly grabbed one of the song titles, separated the letters, and assigned them to a new variable titled “aryWord”. Another variable titled “aryWordState” stored all of the blank underscores as placeholders to each letter.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">randomWord</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">aryWordState</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="nx">aryWord</span> <span class="o">=</span> <span class="nx">words</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">words</span><span class="p">.</span><span class="nx">length</span><span class="p">)];</span>
+    <span class="kd">var</span> <span class="nx">index</span> <span class="o">=</span> <span class="nx">words</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">aryWord</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">index</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">words</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">aryWord</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">aryWord</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="s2">" "</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">aryWordState</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">"&amp;nbsp;"</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">aryWord</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"</span><span class="err">\</span><span class="s2">'"</span><span class="p">){</span>
+            <span class="nx">aryWordState</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">"</span><span class="err">\</span><span class="s2">'"</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">aryWord</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"."</span><span class="p">){</span>
+            <span class="nx">aryWordState</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">"."</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">aryWordState</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">"_"</span><span class="p">);</span>
+        <span class="nx">letterBank</span><span class="o">++</span><span class="p">;</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"game-zone"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">aryWordState</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s2">" "</span><span class="p">);</span>
+        <span class="p">}</span> 
+    <span class="p">}</span> 
+<span class="p">}</span> </code></pre></figure>
+
+<p>Now, every time the user clicked on a letter button, that letter was compared to the different letters in the “aryWord” variable, and if any of them matched, that letter would be displayed in place of the underscore.</p>
+
+<p>What I hadn’t yet understood that week were objects. Objects are like vessels that can store many variables related to itself. Having an object store the current song title, the hint, and the music file all-in-one would’ve made more sense.</p>
+
+<p>To learn more about this project, check out the readme and code files on the GitHub page <a href="https://github.com/smiley-coyote/Word-Guess-Game">here</a>.</p>
+
+<p>I finally had an understanding of objects when creating <a href="https://smiley-coyote.github.io/unit-4-game/">Avatar RPG</a>. In this game, the user selects a character from Avatar: The Last Airbender and fights off the other characters.</p>
+
+<p>I used objects within an object to store each fighter and their fighting stats, and had empty variables that would later house the selected fighter and the computer selected fighter.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">fighter</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">earthbender</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">"Toph"</span><span class="p">,</span>
+        <span class="na">type</span><span class="p">:</span> <span class="s2">"Earthbender"</span><span class="p">,</span>
+        <span class="na">superpower</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+        <span class="na">hp</span><span class="p">:</span> <span class="mi">110</span><span class="p">,</span>
+        <span class="na">ap</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+        <span class="na">cap</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="na">firebender</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">"Zuko"</span><span class="p">,</span>
+        <span class="na">type</span><span class="p">:</span> <span class="s2">"Firebender"</span><span class="p">,</span>
+        <span class="na">superpower</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+        <span class="na">hp</span><span class="p">:</span> <span class="mi">150</span><span class="p">,</span>
+        <span class="na">ap</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+        <span class="na">cap</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="na">waterbender</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">"Katara"</span><span class="p">,</span>
+        <span class="na">type</span><span class="p">:</span> <span class="s2">"Waterbender"</span><span class="p">,</span>
+        <span class="na">superpower</span><span class="p">:</span> <span class="s2">""</span><span class="p">,</span>
+        <span class="na">hp</span><span class="p">:</span> <span class="mi">160</span><span class="p">,</span>
+        <span class="na">ap</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+        <span class="na">cap</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="na">airbender</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">name</span><span class="p">:</span> <span class="s2">"Aang"</span><span class="p">,</span>
+        <span class="na">type</span><span class="p">:</span> <span class="s2">"Airbender"</span><span class="p">,</span>
+        <span class="na">superpower</span><span class="p">:</span> <span class="s2">"Avatar"</span><span class="p">,</span>
+        <span class="na">hp</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span>
+        <span class="na">ap</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>
+        <span class="na">cap</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+    <span class="p">},</span>
+
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">yourFighter</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="kd">var</span> <span class="nx">computerFighter</span> <span class="o">=</span> <span class="p">{};</span></code></pre></figure>
+
+<p>Each time you clicked the fight button, depending on your character class, you would have different weaknesses or advantages against the other players. Water is stronger than fire, fire stronger than earth, and earth stronger than water.</p>
+
+<p>Every time your character successfully attacked the opponent, their attack power (ap) increased.</p>
+
+<p>I also added a few different randomizers. One added the chance of missing your opponent when attacking, while the other added the chance of your opponent using their special ability.</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">6</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">j</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="nx">computerFighter</span><span class="p">.</span><span class="nx">hp</span> <span class="o">=</span> <span class="p">(</span><span class="nx">computerFighter</span><span class="p">.</span><span class="nx">hp</span> <span class="o">-</span> <span class="p">(</span><span class="nx">yourFighter</span><span class="p">.</span><span class="nx">ap</span> <span class="o">+</span> <span class="mi">5</span><span class="p">));</span>
+                        <span class="nx">yourFighter</span><span class="p">.</span><span class="nx">ap</span> <span class="o">=</span> <span class="nx">yourFighter</span><span class="p">.</span><span class="nx">ap</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+                        <span class="nx">$</span><span class="p">(</span><span class="s2">"#stats-you"</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">"Aang attacked Katara with "</span> <span class="o">+</span> <span class="nx">yourFighter</span><span class="p">.</span><span class="nx">ap</span> <span class="o">+</span> <span class="s2">" ap!"</span><span class="p">)</span>
+                    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                        <span class="nx">$</span><span class="p">(</span><span class="s2">"#stats-you"</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">"Aang's attack missed!"</span><span class="p">);</span></code></pre></figure>
+
+<p>To view more about this project, head over to the GitHub <a href="https://github.com/smiley-coyote/unit-4-game">page</a>.</p>
+
+
+        </div>
+        <!-- .post-content -->
+            <!-- <div class="share-post">
+                <span>Share</span>
+                <a target="_blank" href="https://twitter.com/intent/tweet?text=The%20Early%20Adventures%20of%20JavaScript&amp;url=http://localhost:4000/jukebox-hangman">Twitter</a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/jukebox-hangman&amp;t=The%20Early%20Adventures%20of%20JavaScript">Facebook</a>
+            </div> -->
+            <!-- .share-post -->
+            
+            <div class="author-box">
+                <div class="author-avatar" style="background-image: url(/myblog/assets/images/authorimage.png)"><span class="screen-reader-text">Nick's Picture</span></div>
+            
+                <div class="author-details">
+                    <h2 class="author-title">About Nick</h2>
+                    <p class="author-bio">Nick is a freelance web developer, bread maker, universe explorer, and a father of a pug.</p>
+                    <span class="author-location">Orlando, Florida</span>
+                    <span class="author-website"><a href="https://nicholasaalex.com" target="_blank">https://nicholasaalex.com</a></span>
+                </div><!-- .author-details -->
+            </div><!-- .author-box -->
+    </article><!-- .post -->
+
+
+
+    
+</main><!-- .main-content -->
+
+    <footer class="site-footer">
+        <div class="offsite-links">
+            
+            
+            <a href="https://codepen.io/smiley-coyote" class="codepen-link">
+                <span class="icon-codepen" aria-hidden="true"></span>
+                <span class="screen-reader-text">CodePen</span>
+            </a>
+            
+            
+            <a href="https://github.com/smiley-coyote" class="github-link">
+                <span class="icon-github" aria-hidden="true"></span>
+                <span class="screen-reader-text">GitHub</span>
+            </a>
+            
+            
+            <a href="https://www.linkedin.com/in/nick-alex" class="linkedin-link">
+                <span class="icon-linkedin" aria-hidden="true"></span>
+                <span class="screen-reader-text">LinkedIn</span>
+            </a>
+            
+            
+            <a href="http://instagram.com/smiley_coyote" class="instagram-link">
+                <span class="icon-instagram" aria-hidden="true"></span>
+                <span class="screen-reader-text">Instagram</span>
+            </a>
+            
+            <a href="/myblog/feed.xml" class="rss-link">
+                <span class="icon-rss"></span>
+                <span class="screen-reader-text">RSS Feed</span>
+            </a>
+        </div><!-- .offsite-links -->
+        <div class="footer-bottom">
+            <div class="site-info">
+                &copy; <a href="/myblog/">Nicholas Alex</a> all rights reserved. <br />Powered by <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>. Scriptor theme by <a target="_blank" href="http://justgoodthemes.com/">JustGoodThemes</a>
+                <a href="#page" id="back-to-top" class="back-to-top"><span class="screen-reader-text">Back to the top </span>&#8593;</a>
+            </div><!-- .site-info -->
+        </div>
+</footer><!-- .site-footer -->
+
+    </div><!-- .inner -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/myblog/assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/myblog/assets/js/custom.js"></script>
+</body>
+</html>
