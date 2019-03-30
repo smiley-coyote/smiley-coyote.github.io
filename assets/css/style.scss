@@ -599,3 +599,33 @@ a.back-to-top:hover {
     margin: 0 0 5px;
   }
 }
+
+// changes made by me
+
+html {
+  border-color: #727df1;
+}
+
+a {
+  color: #727df1;
+}
+
+.main-navigation a:hover {
+  color: #727df1;
+}
+
+.post-title a:hover{
+  color:#727df1;
+}
+
+.featured-post{
+  color:#727df1;
+}
+
+.site-title a:hover{
+  color:#727df1;
+}
+
+.offsite-links a:hover{color:#727df1}
+
+a.back-to-top:hover{border-color:#727df1;color:#727df1;}
