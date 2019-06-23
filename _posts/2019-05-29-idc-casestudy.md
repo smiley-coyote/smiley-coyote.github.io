@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Industrial Diver's Corp Case Study"
-date:   2019-03-29
+date:   2019-05-29
 banner_image: /assets/images/posts/2019/IDC/IDC-banner.png
 tags: [case study, frontend, project, html, css]
 ---
