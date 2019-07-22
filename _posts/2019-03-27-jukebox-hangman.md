@@ -3,7 +3,7 @@ layout: post
 title:  "The Early Adventures of JavaScript"
 date:   2019-03-28
 banner_image: /assets/images/posts/2019/jukebox.png
-tags: [tech, web development, experiences]
+tags: [tech, webdevelopment, experiences]
 ---
 
 With no prior experience to programming whatsoever, learning JavaScript reminded me of a couple things. First, when I started learning about JavaScript variables, I thought about the variables in Algebra, in which we’d assign them values and plug them into equations. This made me to think about Algebra class in middle school, and then I thought about my mom.

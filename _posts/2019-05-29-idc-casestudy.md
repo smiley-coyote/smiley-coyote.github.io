@@ -3,7 +3,7 @@ layout: post
 title:  "Industrial Diver's Corp Case Study"
 date:   2019-05-29
 banner_image: /assets/images/posts/2019/IDC/IDC-banner.png
-tags: [case study, frontend, project, html, css]
+tags: [casestudy, frontend, project, html, css]
 ---
 
 I was recently given the opportunity to redesign the website for the Fort Lauderdale based underwater construction company Industrial Divers Corporation (IDC). <!--more-->This is what the website looked like when it was first presented to me:
